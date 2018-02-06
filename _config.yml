@@ -4,23 +4,23 @@
 baseurl:
 url: https://kingrome2017.github.io
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
-timezone: Asia/Shanghai
+title: 南博客
+subtitle: "人生没有退路，但，南博客有！"
+description: "李士杰的个人博客"
+keywords: 南博客, Shijie Li, flythejoy, lishijie
+timezone: Asia/Beijing
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
-organization: zkh360.com
-organization_url: http://www.zkh360.com
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+author: Shijie Li
+organization: lisji.netlify.com
+organization_url: https://lisji.netlify.com
+github_username: flythejoy
+location: Zhangjiakou, China
+email: flythejoylele@foxmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -33,10 +33,6 @@ navs:
   -
     href: /categories/
     label: 分类
-
-  -
-    href: /wiki/
-    label: 维基
 
   -
     href: /links/
@@ -84,19 +80,13 @@ repository: kingrome2017/kingrome2017.github.io
 # ---------------- #
 # support provider: disqus, gitment, gitalk
 comments_provider: gitalk
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: kingrome2017
     repo: kingrome2017.github.io
     clientID: f4d60ec45e45e0dd2f33
     clientSecret: 65b39928b01c1008e7c8e684e78fa6bfd71b79ce
-
-# 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
-
 # ---------------- #
 #    Analytics     #
 # ---------------- #
