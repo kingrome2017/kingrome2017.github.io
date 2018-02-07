@@ -1,18 +1,18 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 愿你走过半生，归来任是少年
+keywords: NIKO4, 李士杰
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+愿你走过半生，归来任是少年。
 
-仰慕「优雅编码的艺术」。
+献「给很多年后 一去不复返的自己」。
 
-坚信熟能生巧，努力改变人生。
+喜欢就奋不顾身，不抛弃，不放弃。
 
 ## 联系
 
