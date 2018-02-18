@@ -1,48 +1,48 @@
 ---
 layout: post
-title: 测试
+title: git常用命令指南
 categories: Blog
-description: 测试
+description: git常用命令指南
 keywords: Blog, Emulator, TCP
 ---
 
-## MaHua有哪些功能？
+## 〉生成SSH
 
-* 方便的`导入导出`功能
-    *  直接把一个markdown的文本文件拖放到当前这个页面就可以了
-    *  导出为一个html格式的文件，样式一点也不会丢失
-* 编辑和预览`同步滚动`，所见即所得（右上角设置）
-* `VIM快捷键`支持，方便vim党们快速的操作 （右上角设置）
-* 强大的`自定义CSS`功能，方便定制自己的展示
-* 有数量也有质量的`主题`,编辑器和预览区域
-* 完美兼容`Github`的markdown语法
-* 预览区域`代码高亮`
-* 所有选项自动记忆
-
-## 有问题反馈
-在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
-
-* 邮件(dev.hubo#gmail.com, 把#换成@)
-* QQ: 287759234
-* weibo: [@草依山](http://weibo.com/ihubo)
-* twitter: [@ihubo](http://twitter.com/ihubo)
-
-## 捐助开发者
-在兴趣的驱动下,写一个`免费`的东西，有欣喜，也还有汗水，希望你喜欢我的作品，同时也能支持一下。
-当然，有钱捧个钱场（右上角的爱心标志，支持支付宝和PayPal捐助），没钱捧个人场，谢谢各位。
-
-## 感激
-感谢以下的项目,排名不分先后
-
-* [mou](http://mouapp.com/) 
-* [ace](http://ace.ajax.org/)
-* [jquery](http://jquery.com)
-
-## 关于作者
+* 使用git已两三月了，最常用的几个命令倒是很熟悉，用的比较少的命令很是记不清，要多多探索这些命令，首先要有个帐号为所欲为，接下来开始正题
 
 ```javascript
-  var ihubo = {
-    nickName  : "草依山",
-    site : "http://jser.me"
-  }
+    $ ssh-keygen -t ras -C "email@xxx"
 ```
+## 〉设置用户名
+  
+```javascript
+    $ git config --global user.name "cc"
+    $ git config --global user.email "cc@xx"
+```
+
+## 〉分支操作
+```javascript
+    /*查看分支*/
+    git branch     //所有本地分支
+    git branch -r  //所有远程分支
+    git branch -a  //所有远程分支和本地分支
+
+    /*创建分支*/ git branch branchName //留在当前分支
+    git checkout -b branchName //创建并切换分支
+    git branch --set-upstream-to=<remote>/branchName //建立本地分支与远程分支的追踪关系
+    git branch --track branchName [remote branch] //新建一个分支，并与远程建立追踪关系 git checkout branchName //切到指定分支 /*分支合并*/ git pull origin branch //取回远程更新并与本地分支合并 git fetch origin branch //取回远程更新 git merge branch //合并指定分支到当前分支(产生提交记录) git rebase branch //合并指定分支到当前分支(不产生提交记录，比较适合有强迫症的) git cherry-pick commitId //将与commitId对应的提交合进当前分支
+```
+
+
+## 〉放弃暂存区修改
+感谢以下的项目,排名不分先后
+ ` 
+    git checkout -- filename  //放弃暂存区修改（修改不在）
+    git rm --cached filename  //放弃add（修改还在，但产生一条delete记录）
+    git reset HEAD filename   //同上（没有delete记录）
+
+    git stash     //暂时放弃未提交的修改
+    git stash pop  //恢复
+`
+
+
