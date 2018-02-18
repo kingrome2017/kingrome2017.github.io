@@ -16,7 +16,7 @@ permalink: /about/
 
 ## 联系
 
-{% for website in site.data.social %}
+<!-- {% for website in site.data.social %}
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
 {% endfor %}
 
@@ -29,4 +29,4 @@ permalink: /about/
 <button class="btn btn-outline" type="button">{{ keyword }}</button>
 {% endfor %}
 </div>
-{% endfor %}
+{% endfor %} -->
